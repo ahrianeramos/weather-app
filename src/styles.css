@@ -34,6 +34,20 @@
   color: #000;
 }
 
+a {
+  text-decoration-line: none;
+}
+
+a.active {
+  color: #5e5e58;
+  cursor: default;
+}
+
+a.active:hover {
+  color: #5e5e58;
+  
+}
+
 #description {
   text-transform: capitalize;
 }
