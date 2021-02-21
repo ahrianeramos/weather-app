@@ -21,13 +21,8 @@
             <input type="text" class="form-control" placeholder="Enter City" id="city-input" autocomplete="off">
           </div>
           <div class="col-auto">
-            <button type="submit" id="search-btn" title="Search">
-              🔎
-            </button>
-          </div>
-          <div class="col-auto">
-            <button type="submit" id="current-location-btn" title="Current Location">
-              📌
+            <button type="submit" class="btn btn-primary mb-1" id="search-btn" title="Search">
+              Search
             </button>
           </div>
         </form>
@@ -53,14 +48,14 @@
           alt="temperature icon"
           id="temp-icon"
           width="100"
-          
         />
       </div>
-
-      <div class="col-auto" id="temperature">1</div>
-
-      <div class="col-auto" id="temp-units"><strong>°C</strong> | F</div>
-
+      <div class="col-auto" id="temperature">
+        25
+      </div>
+      <div class="col-auto" id="temp-units">
+        <strong>°C</strong> | F
+      </div>
       <div class="col-auto" id="temp-data">
         <ul id="temp-data-ul">
           <li>

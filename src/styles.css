@@ -15,23 +15,12 @@
 }
 
 #search-btn {
-  background-color: #fafafa;
-  border: none;
-  padding: 8px 3px 5px 3px;
+  transition: ease-out .3s;
 }
 
 #search-btn:hover {
-  background: #f8f8f8;
-}
-
-#current-location-btn {
-  background-color: #fafafa;
-  border: none;
-  padding: 8px 3px 5px 3px;
-}
-
-#current-location-btn:hover {
-  background: #f8f8f8;
+  color: #0d6efd;
+  background: #fafafa;
 }
 
 .location-header {
