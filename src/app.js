@@ -40,10 +40,17 @@ function displayTemperature(response) {
   wind.innerHTML = Math.round(response.data.wind.speed);
 }
 
-let apiKey = "d181817faaf7ac4148d91ac2cdf0c65a";
-let city = "Rome"
-let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=imperial`;
+function search(city) {
+  let apiKey = "d181817faaf7ac4148d91ac2cdf0c65a";
+  let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=imperial`;
+  axios.get(apiUrl).then(displayTemperature);
+}
 
-console.log(apiUrl);
+function formSubmit(event) {
+  event.preventDefault();
+  let cityInput = document.querySelector("#city-input");
+  search(cityInput.value);
+}
 
-axios.get(apiUrl).then(displayTemperature);
+let form = document.querySelector("#search-engine");
+form.addEventListener("submit", formSubmit);

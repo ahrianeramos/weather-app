@@ -11,7 +11,7 @@
 }
 
 .form-control {
-  width: 300px;
+  width: 330px;
 }
 
 #search-btn {
@@ -47,6 +47,10 @@
 
 #description {
   text-transform: capitalize;
+}
+
+#icon-position {
+  padding: 10px 12px 0px 18px;
 }
 
 #temp-icon {

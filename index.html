@@ -18,15 +18,15 @@
       <div class="col-auto">
         <form class="row" id="search-engine">
           <div class="col-auto">
-            <input type="text" class="form-control" placeholder="Enter City">
+            <input type="text" class="form-control" placeholder="Enter City" id="city-input" autocomplete="off">
           </div>
           <div class="col-auto">
-            <button type="submit" class="btn btn-primary mb-1" id="search-btn" title="Search">
+            <button type="submit" id="search-btn" title="Search">
               🔎
             </button>
           </div>
           <div class="col-auto">
-            <button type="submit" class="btn btn-primary mb-1" id="current-location-btn" title="Current Location">
+            <button type="submit" id="current-location-btn" title="Current Location">
               📌
             </button>
           </div>
@@ -36,22 +36,24 @@
 
     <div class="location-header">
       <div class="col-auto" id="location">
-
+        San Francisco
       </div>
       <div class="col-6" id="current-date">
         Monday <span id="current-time">08:00</span>
       </div>
       <div class="col-6" id="description">
-
+        Clear Sky
       </div>
     </div>
 
     <div class="row">
-      <div class="col-2">
+      <div class="col-2" id="icon-position">
         <img
           src="https://ssl.gstatic.com/onebox/weather/64/sunny.png"
           alt="temperature icon"
           id="temp-icon"
+          width="100"
+          
         />
       </div>
 
