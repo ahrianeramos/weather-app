@@ -25,6 +25,7 @@ function displayTemperature(response) {
   let location = document.querySelector("#location");
   let currentDate = document.querySelector("#current-date");
   let description = document.querySelector("#description");
+  let tempIcon = document.querySelector("#temp-icon");
   let temperature = document.querySelector("#temperature");
   let feelsLike = document.querySelector("#feels-like");
   let humidity = document.querySelector("#humidity");
@@ -32,6 +33,7 @@ function displayTemperature(response) {
   location.innerHTML = response.data.name;
   currentDate.innerHTML = formatDate(response.data.dt * 1000);
   description.innerHTML = response.data.weather[0].description;
+  tempIcon.setAttribute("src", `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`);
   temperature.innerHTML = Math.round(response.data.main.temp);
   feelsLike.innerHTML = Math.round(response.data.main.feels_like);
   humidity.innerHTML = response.data.main.humidity;
@@ -39,7 +41,7 @@ function displayTemperature(response) {
 }
 
 let apiKey = "d181817faaf7ac4148d91ac2cdf0c65a";
-let city = "San Francisco"
+let city = "Rome"
 let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=imperial`;
 
 console.log(apiUrl);
