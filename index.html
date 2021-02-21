@@ -36,33 +36,35 @@
 
     <div class="location-header">
       <div class="col-auto" id="location">
-        San Francisco, CA
+
       </div>
-      <div class="col-6" id="current-time">
-        Monday 08:00
+      <div class="col-6" id="current-date">
+        Monday <span id="current-time">08:00</span>
       </div>
-      <div class="col-6">
-        Clear
+      <div class="col-6" id="description">
+
       </div>
     </div>
 
     <div class="row">
-      <div class="col-auto" id="temperature">
+      <div class="col-auto" id="temp-icon">
         <i class="fas fa-cloud-moon"></i>
-        34
-        <span class="smaller">°C | F</span>
       </div>
+
+      <div class="col-auto" id="temperature">1</div>
+
+      <div class="col-auto" id="temp-units"><strong>°C</strong> | F</div>
 
       <div class="col-auto" id="temp-data">
         <ul id="temp-data-ul">
           <li>
-            Precipitation: 0%
+            Feels Like <span id="feels-like"></span>°C
           </li>
           <li>
-            Humidity: 50%
+            Humidity: <span id="humidity"></span>
           </li>
           <li>
-            Wind: 2 km/h
+            Wind: <span id="wind"></span> km/h
           </li>
         </ul>
       </div>

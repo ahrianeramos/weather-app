@@ -41,25 +41,37 @@
 }
 
 #location {
-  font-size: 2em;
+  font-size: 2.5em;
   color: #000;
 }
 
-#temperature {
+#description {
+  text-transform: capitalize;
+}
+
+#temp-icon {
   font-size: 4em;
   color: #000;
-  padding: 0px 5px 0px 30px;
+  padding: 0px 0px 0px 30px;
   margin-left: 15px;
 }
 
-span.smaller {
-  font-size: medium;
+#temperature {
+  font-size: 4.5em;
+  color: #000;
+  padding: 0px 0px 0px 12px;
   position: relative;
-  top: -33px;
+  top: -10px;
+}
+
+#temp-units {
+  font-size: 18px;
+  position: relative;
+  top: 16px;
 }
 
 #temp-data {
-  margin-left: 70px;
+  margin-left: 50px;
   padding: 22px 0px 0px 0px;
 }
 
