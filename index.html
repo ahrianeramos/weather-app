@@ -16,17 +16,19 @@
   <div class="container">
     <div class="d-flex justify-content-center">
       <div class="col-auto">
-        <form class="row g-1" id="search-city">
+        <form class="row" id="search-engine">
           <div class="col-auto">
             <input type="text" class="form-control" placeholder="Enter City">
           </div>
           <div class="col-auto">
-            <button type="submit" class="btn btn-primary mb-1">
+            <button type="submit" class="btn btn-primary mb-1" id="search-btn" title="Search">
               🔎
             </button>
           </div>
           <div class="col-auto">
-            <button type="submit" class="btn btn-primary mb-1">📌</button>
+            <button type="submit" class="btn btn-primary mb-1" id="current-location-btn" title="Current Location">
+              📌
+            </button>
           </div>
         </form>
       </div>
@@ -45,14 +47,14 @@
     </div>
 
     <div class="row">
-      <div class="col-6" id="temperature">
+      <div class="col-auto" id="temperature">
         <i class="fas fa-cloud-moon"></i>
         34
         <span class="smaller">°C | F</span>
       </div>
 
-      <div class="col-5" id="current-temperature-data">
-        <ul>
+      <div class="col-auto" id="temp-data">
+        <ul id="temp-data-ul">
           <li>
             Precipitation: 0%
           </li>
